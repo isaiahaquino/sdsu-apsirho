@@ -11,9 +11,9 @@ function Footer() {
         <p>&copy; Copyright 2022, Alpha Psi Rho | Alpha Chapter</p>
         
         <div className='social-links'>
-          <a href='https://www.instagram.com/sdsuapsirho/?hl=en'><img src={instagram} alt=''></img></a>
-          <a href='https://twitter.com/sdsuapsirho?lang=en'><img src={twitter} alt=''></img></a>
-          <a href='https://www.youtube.com/user/APSIRHO/featured'><img src={youtube} alt=''></img></a>
+          <a href='https://www.instagram.com/sdsuapsirho/?hl=en' aria-label="instagram"><img src={instagram} alt=''></img></a>
+          <a href='https://twitter.com/sdsuapsirho?lang=en' aria-label="twitter"><img src={twitter} alt=''></img></a>
+          <a href='https://www.youtube.com/user/APSIRHO/featured' aria-label="youtube"><img src={youtube} alt=''></img></a>
         </div>
       </div>
     </footer>

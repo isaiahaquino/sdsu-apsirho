@@ -10,7 +10,7 @@ function Logo({ click, handleClick }) {
       <img src={seal} alt="" id='seal'></img>
       <h1 className='title'>ALPHA PSI RHO</h1>
       <h2 className='title'>ALPHA CHAPTER</h2>
-      <div className='menu-icon' onClick={handleClick}>
+      <div className='menu-icon' onClick={handleClick} aria-hidden='true'>
         <img src={click ? close : menu} alt=''></img>
       </div>
     </div>
