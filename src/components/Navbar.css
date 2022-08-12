@@ -1,0 +1,47 @@
+.navbar a, .navbar a:link, .navbar a:visited, .navbar :active {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-container {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+  width: 100vw;
+}
+
+.active {
+  display: block;
+}
+
+.nav-item {
+  height: 4rem;
+  border-bottom: solid 1px lightgray;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    padding: 2rem 0 4rem 0;
+    width: 100vw;
+    border-bottom: solid 1px lightgray;
+  }
+  
+  .navbar-container {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+}
+
