@@ -8,7 +8,9 @@ function Layout({ children }) {
     <div className="layout">
       <Header />
 
-      { children }
+      <main>
+        { children }
+      </main>
 
       <Footer />
     </div>
