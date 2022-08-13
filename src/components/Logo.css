@@ -2,15 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
+  height: 4rem;
   width: calc(100vw - 2rem);
   padding: 1rem 1rem;
-  border-bottom: solid 1px lightgray;
 }
 
 #seal {
-  max-width: auto;
-  height: 100%;
+  display: none;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
 }
 
 .title{
@@ -19,43 +25,42 @@
 
 .logo h1 {
   font-size: 2rem;
-  display: none;
 }
 
 .logo h2 {
   font-size: 1.5rem;
-  display: none;
+  display: block;
+}
+
+.menu-icon img{
+  width: 30px;
+  height: auto;
 }
 
 @media only screen and (min-width: 700px ) {
-  .logo h1 {
+  .logo {
+    display: flex;
+    height: 5rem;
+    gap: 1rem;
+  }
+
+  #seal {
     display: block;
+    grid-row: 1/3;
+    max-width: auto;
+    height: 100%;
   }
 }
 
 @media only screen and (min-width: 1200px ) {
   .logo {
-    display: grid;
-    grid-template-columns: 4rem 3fr;
-    grid-template-rows: 2fr 1fr;
-    height: 5rem;
     width: fit-content;
-    margin: 3rem auto;
+    margin: 2rem auto;
     border-bottom: none;
   }
 
-  #seal {
-    grid-row: 1/3;
-    max-width: auto;
-    height: 100%;
-  }
-
-  .logo h2 {
-    display: block;
-  }
-
   .logo h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .menu-icon {

@@ -1,8 +1,8 @@
 import * as React from "react"
 import './Footer.css'
-import youtube from '../photos/icons/youtube-black.png'
-import instagram from '../photos/icons/instagram-black.png'
-import twitter from '../photos/icons/twitter-black.png'
+import youtube from '../photos/icons/youtube-white.png'
+import instagram from '../photos/icons/instagram-white.png'
+import twitter from '../photos/icons/twitter-white.png'
 
 function Footer() {
   return (

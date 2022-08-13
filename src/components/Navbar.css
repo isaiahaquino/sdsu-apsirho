@@ -1,6 +1,10 @@
 .navbar a, .navbar a:link, .navbar a:visited, .navbar :active {
   text-decoration: none;
-  color: black;
+  color: var(--color-white);
+}
+
+.navbar {
+  background-color: var(--color-blue);
 }
 
 .navbar-container {
@@ -34,9 +38,9 @@
 
 @media only screen and (min-width: 1200px) {
   .navbar {
-    padding: 2rem 0 4rem 0;
+    padding: 2rem 0 3rem 0;
     width: 100vw;
-    border-bottom: solid 1px lightgray;
+    /* border-bottom: solid 1px lightgray; */
   }
   
   .navbar-container {
@@ -44,6 +48,7 @@
     width: fit-content;
     margin: 0 auto;
     gap: 4rem;
+  
   }
 }
 

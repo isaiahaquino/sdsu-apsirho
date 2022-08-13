@@ -1,5 +1,6 @@
 .footer {
   width: 100vw;
+  background-color: var(--color-blue);
 }
 
 .footer-container {
@@ -7,17 +8,25 @@
   flex-direction: column-reverse;
   align-items: center;
   gap: 1rem;
-  border-top: solid 1px lightgray;
+  /* border-top: solid 1px lightgray; */
   padding: 1rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-container p {
   font-size: 1rem;
+  color: var(--color-white);
 }
 
 .social-links {
   display: flex;
   gap: 1rem;
+}
+
+.social-links img {
+  width: 30px;
+  height: auto;
 }
 
 @media only screen and (min-width: 700px ) {

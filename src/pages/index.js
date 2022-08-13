@@ -4,26 +4,63 @@ import { graphql } from 'gatsby'
 import '../styles/homePage.css'
 
 function HomePage({ data }) {
+
+  const images = data.contentfulEntry.homepagePhotos;
+
   return (
     <Layout>
       <div className="home-video">
-        <video width='1280px' height='720px' autoplay='true' muted loop='true'>
-          <source src={data.contentfulAsset.file.url} type='video/mp4'></source>
+        <video autoplay='true' muted loop='true'>
+          <source src={data.contentfulEntry.homepageVideo.file.url} type='video/mp4'></source>
         </video>
       </div>
       
+      <div className="home-intro">
+        <img src={images[0].file.url} alt='' className="intro-image-1"></img>
+        <p className="para1">{data.contentfulEntry.paragraph1.paragraph1}</p>
+        <img src={images[1].file.url} alt='' className="intro-image-2"></img>
+        <p className="para2">{data.contentfulEntry.paragraph2.paragraph2}</p>
+        <img src={images[2].file.url} alt='' className="intro-image-3"></img>
+      </div>
+
+      <div className="home-newsletter">
+        <h2>CHECK OUT OUR LATEST NEWSLETTERS</h2>
+        <button type="button" className="newsletter-btn">READ MORE</button>
+      </div>
+
+      <div className="home-instagram">
+
+      </div>
+
     </Layout>
   )
 }
 
 export const query = graphql`
 query MyQuery {
-  contentfulAsset(filename: {eq: "rush.mp4"}) {
-    file {
-      url
+  contentfulEntry {
+    ... on ContentfulHomePage {
+      homepageVideo {
+        file {
+          url
+        }
+      }
+      paragraph1 {
+        paragraph1
+      }
+      paragraph2 {
+        paragraph2
+      }
+      homepagePhotos {
+        file {
+          url
+          fileName
+        }
+      }
     }
   }
 }
+
 `
 
 export default HomePage
