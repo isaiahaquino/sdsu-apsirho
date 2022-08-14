@@ -8,7 +8,7 @@ function AboutPage({ data }) {
   return (
     <Layout>
 
-      <div className='about-main'>
+      <div className='about-main pageMain'>
         <h1 className='pageTitle'>ABOUT</h1>
         <div className='mission-statement about-container'>
           <img src={data.contentfulAboutPage.aboutImages[0].file.url} alt=''></img>

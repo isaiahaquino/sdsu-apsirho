@@ -105,3 +105,32 @@ table {
 	--color-white: #f2deb0;
 	--color-lightblue: #4975fa;
 }
+
+
+
+/* PAGE STYLES */
+
+.pageMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 1rem;
+  gap: 4rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .pageMain {
+    flex-direction: row;
+    max-width: 1200px;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .pageMain>* {
+    flex: 1;
+  }
+
+  .pageMain .pageTitle {
+    margin-top: 10rem;
+  }
+}
