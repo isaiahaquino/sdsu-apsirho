@@ -14,8 +14,12 @@
 .mobile-nav {
   display: none;
   position: absolute;
-  background-color: rgba(148, 148, 148, 0.69);
+  background-color: #f2deb0e2;
   width: 100vw;
+}
+
+.nav-item a, .nav-item a:link, .nav-item a:visited, .nav-item a:active {
+  color: var(--color-blue);
 }
 
 .active {
