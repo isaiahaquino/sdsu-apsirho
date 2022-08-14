@@ -54,12 +54,7 @@ table {
 /* font-family: 'Abril Fatface', cursive; */
 /* font-family: 'Merriweather', serif;      Light 300 / Regular 400 / Bold 700 */
 
-.layout {
-  display: flex;
-	flex-direction: column;
-	justify-content: center;
-  min-height: 100vh;
-}
+
 
 @media only screen and (max-width: 1199px) {
 	.header {
@@ -67,6 +62,13 @@ table {
 		top: 0px;
 		z-index: 2;
 	}
+}
+
+.layout {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+  min-height: 100vh;
 }
 
 .layout main {
@@ -78,6 +80,24 @@ table {
 
 .header {
 	background-color: var(--color-blue);
+}
+
+:root {
+	--color-blue: #102963;
+	--color-white: #f2deb0;
+	--color-lightblue: #4975fa;
+}
+
+
+
+/* PAGE STYLES */
+
+.pageMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 1rem;
+  gap: 4rem;
 }
 
 .pageTitle {
@@ -98,24 +118,6 @@ table {
 	font-family: 'Merriweather', serif;
 	font-size: regular;
 	font-weight: 400;
-}
-
-:root {
-	--color-blue: #102963;
-	--color-white: #f2deb0;
-	--color-lightblue: #4975fa;
-}
-
-
-
-/* PAGE STYLES */
-
-.pageMain {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5rem 1rem;
-  gap: 4rem;
 }
 
 @media only screen and (min-width: 1200px) {

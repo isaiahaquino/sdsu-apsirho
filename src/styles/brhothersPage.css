@@ -1,0 +1,16 @@
+.brhothers-main {
+  flex-direction: column;
+}
+
+.brhothers-main .para {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .brhothers-main .para {
+    width: 50vw;
+    max-width: 800px;
+  }
+
+}

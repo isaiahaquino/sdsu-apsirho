@@ -11,7 +11,7 @@ function HistoryPage({ data }) {
 
       <div className='history-main pageMain'>
         <h1 className='pageTitle'>HISTORY</h1>
-        <div className='history-container'>
+        <div className='hist-para1 history-container'>
           <img src={data.contentfulHistoryPage.historyImages[0].file.url} alt=''></img>
           <p className='para'>{data.contentfulHistoryPage.paragraph1.paragraph1}</p>
         </div>
