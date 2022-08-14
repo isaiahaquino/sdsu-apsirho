@@ -1,0 +1,23 @@
+.home-newsletter {
+  background-color: var(--color-lightblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 1rem;
+}
+
+.home-newsletter h2 {
+  color: var(--color-blue);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 1rem;
+}
+
+.newsletter-btn {
+  background-color: var(--color-blue);
+  color: white;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 3px;
+  margin: 2rem 0;
+}

@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from '../components/Layout'
+import NewsletterPrev from "../components/NewsletterPrev"
 import { graphql } from 'gatsby'
 import '../styles/homePage.css'
 
@@ -17,16 +18,13 @@ function HomePage({ data }) {
       
       <div className="home-intro">
         <img src={images[0].file.url} alt='' className="intro-image-1"></img>
-        <p className="para1">{data.contentfulEntry.paragraph1.paragraph1}</p>
+        <p className="para para1">{data.contentfulEntry.paragraph1.paragraph1}</p>
         <img src={images[1].file.url} alt='' className="intro-image-2"></img>
-        <p className="para2">{data.contentfulEntry.paragraph2.paragraph2}</p>
+        <p className="para para2">{data.contentfulEntry.paragraph2.paragraph2}</p>
         <img src={images[2].file.url} alt='' className="intro-image-3"></img>
       </div>
 
-      <div className="home-newsletter">
-        <h2>CHECK OUT OUR LATEST NEWSLETTERS</h2>
-        <button type="button" className="newsletter-btn">READ MORE</button>
-      </div>
+      <NewsletterPrev />
 
       <div className="home-instagram">
 
