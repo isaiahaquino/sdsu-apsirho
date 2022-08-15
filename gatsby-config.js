@@ -3,7 +3,7 @@ require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: `Alpha Psi Rho | Alpha Chapter`,
-    description: ` Alpha Psi Rho, Alpha Chapter at San Diego State University`,
+    description: `Alpha Psi Rho, Alpha Chapter at San Diego State University`,
     siteUrl: `https://sdsualphapsirho.gatsbyjs.io/`,
   },
   plugins: [

@@ -4,7 +4,6 @@ import Footer from './Footer'
 import Logo from './Logo'
 import Navbar from './Navbar'
 import './Layout.css'
-import { SEO } from "./seo"
 
 function Layout({ children }) {
 
@@ -36,9 +35,5 @@ function Layout({ children }) {
     </div>
   )
 }
-
-export const Head = () => (
-  <SEO />
-)
 
 export default Layout

@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import '../styles/aboutPage.css'
 import NewsletterPrev from '../components/NewsletterPrev'
+import { SEO } from '../components/seo'
 
 function AboutPage({ data }) {
   return (
@@ -41,6 +42,10 @@ function AboutPage({ data }) {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO />
+)
 
 export const query = graphql`
 query {

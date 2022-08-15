@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import NewsletterPrev from "../components/NewsletterPrev"
 import { graphql } from 'gatsby'
 import '../styles/homePage.css'
+import { SEO } from "../components/seo"
 
 function HomePage({ data }) {
 
@@ -33,6 +34,10 @@ function HomePage({ data }) {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO />
+)
 
 export const query = graphql`
 query MyQuery {
