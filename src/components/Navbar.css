@@ -47,6 +47,20 @@
     margin: 0 auto;
     gap: 2rem;
   }
+
+  .navbar {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-container>* {
+    padding: calc(2.5rem - 1px) 0;
+  }
+
+  .navbar-container [aria-current] {
+    border-bottom: solid 3px var(--color-blue);
+  }
 }
 
 

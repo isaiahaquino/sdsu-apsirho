@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from '../components/Layout'
 import '../styles/chaptersPage.css'
 import { graphql } from 'gatsby'
+import NewsletterPrev from '../components/NewsletterPrev'
 
 function ChaptersPage({ data }) {
   return (
@@ -21,6 +22,8 @@ function ChaptersPage({ data }) {
           }
         </div>
       </div>
+      
+      <NewsletterPrev />
 
     </Layout>
   )
