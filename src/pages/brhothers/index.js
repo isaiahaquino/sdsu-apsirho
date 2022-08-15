@@ -13,8 +13,8 @@ function BrhothersPage({ data }) {
         <p className='para'>{data.contentfulBrhothersPage.paragraph1.paragraph1}</p>
         <div className='brhothers-classes'>
           {
-            data.allContentfulBrhothersClasses.nodes.map(node => (            
-              <Link key={node.class} to={`/brhothers/${node.class}`}>
+            data.allContentfulBrhothersClasses.nodes.map(node => (
+              <Link key={node.id} to={`/brhothers/${node.slug}`}>
                 <h2>{node.class}</h2>
               </Link>
             ))
@@ -39,6 +39,7 @@ query {
   allContentfulBrhothersClasses {
     nodes {
       class
+      slug
       id
     }
   }

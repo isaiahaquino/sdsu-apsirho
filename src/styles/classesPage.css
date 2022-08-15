@@ -1,0 +1,43 @@
+.class-main, .class-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.class-main {
+  width: 100%;
+}
+
+.class-main img {
+  max-width: 100%;
+  height: auto;
+}
+
+.class-main .pageTitle {
+  text-align: center;
+}
+
+.class-main .pageSubtitle {
+  margin-bottom: 0;
+}
+
+.class-photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 700px) {
+  .class-photos {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
