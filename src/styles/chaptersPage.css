@@ -1,0 +1,18 @@
+.chapters-main {
+  flex-direction: column;
+  max-width: 800px;
+  align-items: center;
+  gap: 5rem;
+}
+
+.chapters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .chapters-main {
+    margin-top: 0;
+  }
+}
