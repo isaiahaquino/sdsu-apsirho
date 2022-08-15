@@ -2,8 +2,9 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: `sdsu-apsirho`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Alpha Psi Rho | Alpha Chapter`,
+    description: ` Alpha Psi Rho, Alpha Chapter at San Diego State University`,
+    siteUrl: `https://sdsualphapsirho.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
