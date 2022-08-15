@@ -12,12 +12,15 @@
 }
 
 .mobile-nav {
-  display: none;
+  visibility: hidden;
+  z-index: -1;
   position: absolute;
   left: 0;
-  top: 4.5rem;
+  top: 4rem;
   background-color: #e4e4e4e2;
   width: 100vw;
+  opacity: 0;
+  transition: all 0.2s ease-in;
 }
 
 .nav-item a, .nav-item a:link, .nav-item a:visited, .nav-item a:active {
@@ -25,12 +28,20 @@
 }
 
 .active {
-  display: block;
+  visibility: visible;
+  top: 4.5rem;
+  z-index: 2;
+  opacity: 1;
+}
+
+.active .nav-item {
+  height: 4rem;
 }
 
 .nav-item {
-  height: 4rem;
+  height: 3.5rem;
   border-bottom: solid 1px lightgray;
+  transition: all 0.2s ease-in;
 }
 
 .nav-link {
