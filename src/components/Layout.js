@@ -15,14 +15,16 @@ function Layout({ children }) {
   return (
     <div className="layout">
       <div className="header">
-        <Logo 
-          click={click}
-          handleClick={handleClick}
-        />
-        <Navbar
-          click={click}
-          closeMobileMenu={closeMobileMenu}
-        />
+        <div className="header-container">
+          <Logo 
+            click={click}
+            handleClick={handleClick}
+          />
+          <Navbar
+            click={click}
+            closeMobileMenu={closeMobileMenu}
+          />
+        </div>
       </div>
 
       <main>

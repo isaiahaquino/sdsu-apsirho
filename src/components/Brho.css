@@ -1,11 +1,6 @@
 .brho-box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(100vw - 4rem);
-  height: calc(100vw - 6rem);
-  max-width: 500px;
-  max-height: 400px;
+  width: 300px;
+  height: 250px;
 }
 
 .brho-img {
@@ -21,22 +16,13 @@
   position: relative;
   bottom: 3.5rem; 
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .brho-name p {
   color: var(--color-blue);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: center;
 }
 
-
-@media only screen and (min-width: 700px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-}

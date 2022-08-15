@@ -2,13 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4rem;
-  width: calc(100vw - 2rem);
-  padding: 1rem 1rem;
-}
-
-#seal {
-  display: none;
+  padding: .5rem .5rem;
+  width: calc(100vw - 1rem);
 }
 
 .titles {
@@ -16,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
+  color: var(--color-blue);
   font-family: 'Abril Fatface', cursive;
 }
 
@@ -38,33 +33,19 @@
   height: auto;
 }
 
-@media only screen and (min-width: 700px ) {
-  .logo {
-    display: flex;
-    height: 5rem;
-    gap: 1rem;
+@media only screen and (min-width: 1000px ) {
+  .menu-icon {
+    display: none;
   }
 
-  #seal {
-    display: block;
-    grid-row: 1/3;
-    max-width: auto;
-    height: 100%;
+  .logo {
+    width: fit-content;
   }
 }
 
 @media only screen and (min-width: 1200px ) {
-  .logo {
-    width: fit-content;
-    margin: 2rem auto;
-    border-bottom: none;
-  }
-
   .logo h1 {
     font-size: 3.5rem;
-  }
-
-  .menu-icon {
-    display: none;
+    margin-top: -.5rem;
   }
 }

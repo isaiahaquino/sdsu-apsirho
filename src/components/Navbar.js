@@ -11,9 +11,9 @@ function Navbar({ click, closeMobileMenu }) {
         <Link to='/'>HOME</Link>
         <Link to='/about'>ABOUT</Link>
         <Link to='/history'>HISTORY</Link>
+        <Link to='/chapters'>CHAPTERS</Link>
         <Link to='/brhothers'>BRHOTHERS</Link>
         <Link to='/newsletter'>NEWSLETTER</Link>
-        <Link to='/contact'>CONTACT</Link>
       </div>
 
       <ul className={click ? 'mobile-nav active' : 'mobile-nav'}>
@@ -33,6 +33,11 @@ function Navbar({ click, closeMobileMenu }) {
           </Link>
         </li>
         <li className='nav-item'>
+          <Link to='/chapters' className='nav-link' onClick={closeMobileMenu}>
+            CHAPTERS
+          </Link>
+        </li>
+        <li className='nav-item'>
           <Link to='/brhothers' className='nav-link' onClick={closeMobileMenu}>
             BRHOTHERS
           </Link>
@@ -40,11 +45,6 @@ function Navbar({ click, closeMobileMenu }) {
         <li className='nav-item'>
           <Link to='/newsletter' className='nav-link' onClick={closeMobileMenu}>
             NEWSLETTER
-          </Link>
-        </li>
-        <li className='nav-item'>
-          <Link to='/contact' className='nav-link' onClick={closeMobileMenu}>
-            CONTACT
           </Link>
         </li>
       </ul>

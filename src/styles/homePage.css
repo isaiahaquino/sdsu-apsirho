@@ -1,5 +1,6 @@
 .home-video video{
   width: 100vw;
+  max-width: 1500px;
   height: auto;
 }
 

@@ -1,10 +1,10 @@
 .navbar a, .navbar a:link, .navbar a:visited, .navbar :active {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-blue);
 }
 
 .navbar {
-  background-color: var(--color-blue);
+  margin: 0 1rem;
 }
 
 .navbar-container {
@@ -14,7 +14,9 @@
 .mobile-nav {
   display: none;
   position: absolute;
-  background-color: #f2deb0e2;
+  left: 0;
+  top: 4.5rem;
+  background-color: #e4e4e4e2;
   width: 100vw;
 }
 
@@ -38,21 +40,13 @@
   height: 100%;
 }
 
-
-
-@media only screen and (min-width: 1200px) {
-  .navbar {
-    padding: 2rem 0 3rem 0;
-    width: 100vw;
-    /* border-bottom: solid 1px lightgray; */
-  }
-  
+@media only screen and (min-width: 1000px) {
   .navbar-container {
     display: flex;
     width: fit-content;
     margin: 0 auto;
-    gap: 4rem;
-  
+    gap: 2rem;
   }
 }
+
 

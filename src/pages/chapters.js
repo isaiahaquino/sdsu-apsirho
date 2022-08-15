@@ -1,7 +1,8 @@
 import * as React from 'react'
 import Layout from '../components/Layout'
+import '../styles/chaptersPage.css'
 
-function ContactPage() {
+function ChaptersPage() {
   return (
     <Layout>
 
@@ -9,4 +10,4 @@ function ContactPage() {
   )
 }
 
-export default ContactPage
+export default ChaptersPage

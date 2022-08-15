@@ -56,11 +56,26 @@ table {
 
 
 
-@media only screen and (max-width: 1199px) {
-	.header {
-		position: sticky;
-		top: 0px;
-		z-index: 2;
+.header {
+	width: 100vw;
+	background-color: white;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+}
+
+.header-container {
+	display: block;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+	align-items: center;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 1000px) {
+	.header-container {
+		display: flex;
 	}
 }
 
@@ -69,6 +84,7 @@ table {
 	flex-direction: column;
 	justify-content: center;
   min-height: 100vh;
+	background-color: whitesmoke;
 }
 
 .layout main {
@@ -76,10 +92,11 @@ table {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	box-shadow: inset 0 20px 15px -5px lightgrey;
 }
 
-.header {
-	background-color: var(--color-blue);
+a {
+	text-decoration: none;
 }
 
 :root {

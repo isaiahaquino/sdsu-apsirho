@@ -11,7 +11,7 @@ function HomePage({ data }) {
   return (
     <Layout>
       <div className="home-video">
-        <video autoplay='true' muted loop='true'>
+        <video autoPlay={true} muted loop={true}>
           <source src={data.contentfulEntry.homepageVideo.file.url} type='video/mp4'></source>
         </video>
       </div>
