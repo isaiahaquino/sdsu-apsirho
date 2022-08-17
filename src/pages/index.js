@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import NewsletterPrev from "../components/NewsletterPrev"
 import { graphql } from 'gatsby'
 import '../styles/homePage.css'
-import { Seo } from "../components/Seo"
+import { Seo } from "../components/Seo.jsx"
 
 function HomePage({ data }) {
 

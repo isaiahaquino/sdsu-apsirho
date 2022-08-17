@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import '../styles/historyPage.css'
 import NewsletterPrev from '../components/NewsletterPrev'
 import { graphql } from 'gatsby'
-import { Seo } from '../components/Seo'
+import { Seo } from '../components/Seo.jsx'
 
 
 function HistoryPage({ data }) {
@@ -30,7 +30,7 @@ function HistoryPage({ data }) {
 
 export const Head = () => (
   <Seo 
-    title={'Alpha Chapter | History'}
+    title={'History | Alpha Chapter'}
   />
 )
 

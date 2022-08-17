@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import '../styles/chaptersPage.css'
 import { graphql } from 'gatsby'
 import NewsletterPrev from '../components/NewsletterPrev'
-import { Seo } from '../components/Seo'
+import { Seo } from '../components/Seo.jsx'
 
 function ChaptersPage({ data }) {
   return (
@@ -32,7 +32,7 @@ function ChaptersPage({ data }) {
 
 export const Head = () => (
   <Seo 
-    title={'Alpha Psi Rho | Chapters'}
+    title={'Chapters | Alpha Psi Rho'}
   />
 )
 
