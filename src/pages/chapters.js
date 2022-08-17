@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import '../styles/chaptersPage.css'
 import { graphql } from 'gatsby'
 import NewsletterPrev from '../components/NewsletterPrev'
+import { Seo } from '../components/Seo'
 
 function ChaptersPage({ data }) {
   return (
@@ -28,6 +29,12 @@ function ChaptersPage({ data }) {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <Seo 
+    title={'Alpha Psi Rho | Chapters'}
+  />
+)
 
 export const query = graphql`
 query {

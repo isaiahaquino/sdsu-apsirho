@@ -3,6 +3,7 @@ import Layout from '../../components/Layout'
 import { graphql, Link } from 'gatsby'
 import NewsletterPrev from '../../components/NewsletterPrev'
 import '../../styles/brhothersPage.css'
+import { Seo } from '../../components/Seo'
 
 function BrhothersPage({ data }) {
   return (
@@ -28,6 +29,12 @@ function BrhothersPage({ data }) {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <Seo 
+    title={'Brhothers | Alpha Chapter'}
+  />
+)
 
 export const query = graphql`
 query {

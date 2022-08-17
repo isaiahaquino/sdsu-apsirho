@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import '../styles/historyPage.css'
 import NewsletterPrev from '../components/NewsletterPrev'
 import { graphql } from 'gatsby'
+import { Seo } from '../components/Seo'
 
 
 function HistoryPage({ data }) {
@@ -26,6 +27,12 @@ function HistoryPage({ data }) {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <Seo 
+    title={'Alpha Chapter | History'}
+  />
+)
 
 export const query = graphql`
 query {

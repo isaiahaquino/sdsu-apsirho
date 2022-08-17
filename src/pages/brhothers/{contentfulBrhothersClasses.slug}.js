@@ -4,6 +4,7 @@ import Layout from '../../components/Layout'
 import NewsletterPrev from '../../components/NewsletterPrev'
 import '../../styles/classesPage.css'
 import Brho from '../../components/Brho'
+import { Seo } from '../../components/Seo'
 
 function ClassPage({ data }) {
 
@@ -46,6 +47,12 @@ function ClassPage({ data }) {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <Seo 
+    title={'Alpha Chapter | Brhothers'}
+  />
+)
 
 export const query = graphql`
 query ($id: String) {
