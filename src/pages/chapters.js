@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import '../styles/chaptersPage.css'
 import { graphql } from 'gatsby'
 import NewsletterPrev from '../components/NewsletterPrev'
-import { Seo } from '../components/Seo.jsx'
+import { Seo } from '../components/seo'
 
 function ChaptersPage({ data }) {
   return (

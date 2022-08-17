@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import '../styles/historyPage.css'
 import NewsletterPrev from '../components/NewsletterPrev'
 import { graphql } from 'gatsby'
-import { Seo } from '../components/Seo.jsx'
+import { Seo } from '../components/seo'
 
 
 function HistoryPage({ data }) {

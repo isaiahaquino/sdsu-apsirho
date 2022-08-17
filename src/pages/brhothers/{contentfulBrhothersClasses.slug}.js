@@ -4,7 +4,7 @@ import Layout from '../../components/Layout'
 import NewsletterPrev from '../../components/NewsletterPrev'
 import '../../styles/classesPage.css'
 import Brho from '../../components/Brho'
-import { Seo } from '../../components/Seo.jsx'
+import { Seo } from '../../components/seo'
 
 function ClassPage({ data }) {
 

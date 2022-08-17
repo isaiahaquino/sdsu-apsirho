@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/Layout'
-import { Seo } from '../components/Seo.jsx'
+import { Seo } from '../components/seo.jsx'
 
 function NewsletterPage() {
   return (

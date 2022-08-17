@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 import { graphql, Link } from 'gatsby'
 import NewsletterPrev from '../../components/NewsletterPrev'
 import '../../styles/brhothersPage.css'
-import { Seo } from '../../components/Seo.jsx'
+import { Seo } from '../../components/seo'
 
 function BrhothersPage({ data }) {
   return (
