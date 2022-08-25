@@ -68,7 +68,7 @@ query ($id: String) {
     brho {
       title
       file {
-        url
+        url 
       }
     }
   }
