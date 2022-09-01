@@ -13,7 +13,7 @@ function ArticlePage({ data }) {
 
 export const query = graphql`
 query ($id: String) {
-  contentfulNewsletter(id: {eq: $id}) {
+  contentfulNewsletters(id: {eq: $id}) {
     title
     entryDate
     articleText {

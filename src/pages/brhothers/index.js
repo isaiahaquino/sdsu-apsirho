@@ -11,7 +11,7 @@ function BrhothersPage({ data }) {
 
       <div className='brhothers-main pageMain'>
         <h1 className='pageTitle'>BRHOTHERS OF ALPHA CHAPTER</h1>
-        <p className='para'>{data.contentfulBrhothersPage.paragraph1.paragraph1}</p>
+        <p className='para'>{data.contentfulBrhothersPage.paragraph.paragraph}</p>
         <div className='brhothers-classes'>
           {
             data.allContentfulBrhothersClasses.nodes.map(node => (
@@ -39,8 +39,8 @@ export const Head = () => (
 export const query = graphql`
 query {
   contentfulBrhothersPage {
-    paragraph1 {
-      paragraph1
+    paragraph {
+      paragraph
     }
   }
   allContentfulBrhothersClasses {

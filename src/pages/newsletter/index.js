@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from '../../components/Layout'
 import { Seo } from '../../components/seo.jsx'
 import { graphql, Link } from 'gatsby'
+import '../../styles/newslettersPage.css'
 
 function NewsletterPage({ data }) {
   return (
@@ -11,7 +12,7 @@ function NewsletterPage({ data }) {
         <h1 className='pageTitle'>NEWSLETTERS</h1>
         <div className='newsletters-titles'>
         {
-          data.allContentfulNewsletter.nodes.map(node => (
+          data.allContentfulNewsletters.nodes.map(node => (
             <div className='newsletter-prev-container' key={node.id}>
               <Link to={`/newsletter/${node.slug}`}><h2 className='subTitle'>{node.title}</h2></Link>
               <p>{node.entryDate}</p>
@@ -27,7 +28,7 @@ function NewsletterPage({ data }) {
 
 export const query = graphql`
 query {
-  allContentfulNewsletter {
+  allContentfulNewsletters {
     nodes {
       slug
       title
