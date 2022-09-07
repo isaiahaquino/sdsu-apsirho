@@ -3,19 +3,19 @@ import { graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import NewsletterPrev from '../../components/NewsletterPrev'
 import '../../styles/classesPage.css'
-import Brho from '../../components/Brho'
+// import Brho from '../../components/Brho'
 import { Seo } from '../../components/seo'
 
 function ClassPage({ data }) {
 
-  const info = data.contentfulBrhothersClasses;
+  const info = data.contentfulClasses;
 
   return (
     <Layout>
 
       <div className='class-main pageMain'>
-        <h1 className='pageTitle'>{info.class}</h1>
-        <img src={info.classImage.file.url} alt=''></img>
+        <h1 className='pageTitle'>{info.class.toUpperCase()}</h1>
+        <img src={info.classImage === null ? 'data:,' : info.classImage.file.url} alt=''></img>
         <div className='class-sub'>
           <h2 className='pageSubtitle'>{info.className}</h2>
           <h3>{info.semester}</h3>
@@ -24,13 +24,13 @@ function ClassPage({ data }) {
 
         <div className='class-list'>
           {
-            info.brho.map(brho => (
-              <p>{brho.title}</p>
+            info.brhos.map(brho => (
+              <p>{brho}</p>
             ))
           }
         </div>
 
-        <div className='class-photos'>
+        {/* <div className='class-photos'>
           {
             info.brho.map(brho => (
               <Brho
@@ -39,7 +39,7 @@ function ClassPage({ data }) {
               />
             ))
           }
-        </div>
+        </div> */}
         
       </div>
 
@@ -56,7 +56,7 @@ export const Head = () => (
 
 export const query = graphql`
 query ($id: String) {
-  contentfulBrhothersClasses(id: {eq: $id}) {
+  contentfulClasses(id: {eq: $id}) {
     class
     classImage {
       file {
@@ -65,12 +65,7 @@ query ($id: String) {
     }
     className
     semester
-    brho {
-      title
-      file {
-        url 
-      }
-    }
+    brhos
   }
 }
 ` 

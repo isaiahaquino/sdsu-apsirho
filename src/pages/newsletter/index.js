@@ -8,7 +8,7 @@ function NewsletterPage({ data }) {
   return (
     <Layout>
 
-      <div className='newsletters-main pageMain'>
+      <div className='newsletters-main'>
         <h1 className='pageTitle'>NEWSLETTERS</h1>
         <div className='newsletters-titles'>
         {

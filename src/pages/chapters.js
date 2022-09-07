@@ -43,12 +43,12 @@ query {
       paragraph
     }
   }
-  allContentfulChapters {
+  allContentfulChapters(sort: {fields: dateEstablished, order: ASC}) {
     nodes {
       chapter
       url
       location
-      dateEstablished
+      dateEstablished(formatString: "MMMM Do, YYYY")
       status
     }
   }

@@ -14,8 +14,19 @@
   text-align: center;
 }
 
+.class-sub h3 {
+  max-width: 700px;
+}
+
 .class-main .pageSubtitle {
-  margin-bottom: 0;
+  margin-bottom: .25rem;
+  font-size: 1.5rem;
+}
+
+.class-list {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
 }
 
 .class-photos {

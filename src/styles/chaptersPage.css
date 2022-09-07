@@ -11,6 +11,10 @@
   gap: 1rem;
 }
 
+.chapters-container .pageSubtitle {
+  text-align: start;
+}
+
 @media only screen and (min-width: 1200px) {
   .chapters-main {
     margin-top: 0;

@@ -125,12 +125,14 @@ a {
 	font-size: 2.5rem;
 	font-weight: 600;
 	color: var(--color-blue);
+	text-align: center;
 }
 
 .pageSubtitle {
 	font-family: 'Abril Fatface', cursive;
 	letter-spacing: .05rem;
 	color: var(--color-blue);
+	text-align: center;
 }
 
 .para {

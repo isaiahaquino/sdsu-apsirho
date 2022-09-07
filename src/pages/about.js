@@ -13,12 +13,12 @@ function AboutPage({ data }) {
         <h1 className='pageTitle'>ABOUT</h1>
         <div className='mission-statement about-container'>
           <img src={data.contentfulAboutPage.aboutImages[0].file.url} alt=''></img>
-          <h2 className='pageSubtitle'>Mission Statement</h2>
+          <h2 className='pageSubtitle'>MISSION STATEMENT</h2>
           <p className='para'>{data.contentfulAboutPage.missionStatement.missionStatement}</p>
         </div>
         <div className='exec-board about-container'>
           <div className='board'>
-            <h2 className='pageSubtitle'>Executive Board</h2>
+            <h2 className='pageSubtitle'>EXECUTIVE BOARD</h2>
             <h3>President:</h3>
             <p>{data.contentfulAboutPage.president}</p>
             <h3>Vice President Internal:</h3>
