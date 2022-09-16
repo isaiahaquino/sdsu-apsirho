@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Layout from '../../components/Layout'
 import { graphql, Link } from 'gatsby'
-import NewsletterPrev from '../../components/NewsletterPrev'
 import '../../styles/brhothersPage.css'
 import { Seo } from '../../components/seo'
 
@@ -12,25 +11,32 @@ function BrhothersPage({ data }) {
   return (
     <Layout>
 
-      <div className='brhothers-main pageMain'>
+      <div className='pageHeading'>
+        <img className='pageHeadingImg' src={data.contentfulBrhothersPage.brhothersPageImage.url} alt=''></img>
         <h1 className='pageTitle'>BRHOTHERS OF ALPHA CHAPTER</h1>
-        <p className='para'>{data.contentfulBrhothersPage.paragraph.paragraph}</p>
-        <Link key={data.contentfulClasses.id} to={`/brhothers/${data.contentfulClasses.slug}`} id="founding-fathers">
-          <h2>{data.contentfulClasses.class}</h2>
-        </Link>
-        <div className='brhothers-classes'>
-          {
-             nodes.map(node => (
-              <Link key={node.id} to={`/brhothers/${node.slug}`}>
-                <h2>{node.class}</h2>
-              </Link>
-            ))
-          }
+      </div>
 
+      <div className='pageContainer'>
+        <div className='pageDiv'>
+          <div className='pagePara single'>
+            <p className='para'>{data.contentfulBrhothersPage.paragraph.paragraph}</p>
+          </div>
         </div>
       </div>
 
-      <NewsletterPrev />
+      <Link key={data.contentfulClasses.id} to={`/brhothers/${data.contentfulClasses.slug}`} id="founding-fathers">
+        <h2>{data.contentfulClasses.class}</h2>
+      </Link>
+
+      <div className='brhothers-classes'>
+        {
+            nodes.map(node => (
+            <Link className='para' key={node.id} to={`/brhothers/${node.slug}`}>
+              <h2>{node.class}</h2>
+            </Link>
+          ))
+        }
+      </div>      
 
     </Layout>
   )
@@ -47,6 +53,9 @@ query {
   contentfulBrhothersPage {
     paragraph {
       paragraph
+    }
+    brhothersPageImage {
+      url
     }
   }
   allContentfulClasses(sort: {fields: order, order: ASC}, skip: 1) {

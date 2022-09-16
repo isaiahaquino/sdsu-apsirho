@@ -1,6 +1,5 @@
 import * as React from "react"
 import Layout from '../components/Layout'
-import NewsletterPrev from "../components/NewsletterPrev"
 import { graphql } from 'gatsby'
 import '../styles/homePage.css'
 import { Seo } from "../components/seo"
@@ -16,20 +15,31 @@ function HomePage({ data }) {
           <source src={data.contentfulHomePage.homepageVideo.url} type='video/mp4'></source>
         </video>
       </div>
+    
+      <div className="pageContainer">
+        <div className="pageDiv">
+          <img src={images[0].url} alt=''></img>
+          <div className="pagePara">
+            <h2 className="pageSubtitle">Alpha Psi Rho</h2>
+            <p className="para">{data.contentfulHomePage.paragraph1.paragraph1}</p>
+          </div>
+        </div>
+      </div>
       
-      <div className="home-intro">
-        <img src={images[0].url} alt='' className="intro-image-1"></img>
-        <p className="para para1">{data.contentfulHomePage.paragraph1.paragraph1}</p>
-        <img src={images[1].url} alt='' className="intro-image-2"></img>
-        <p className="para para2">{data.contentfulHomePage.paragraph2.paragraph2}</p>
-        <img src={images[2].url} alt='' className="intro-image-3"></img>
+      <div className="pageContainer blueBackground">
+        <div className="pageDiv">
+          <img src={images[1].url} alt=''></img>
+          <div className="pagePara">
+            <h2 className="pageSubtitle">We the Gentlemen . . .</h2>
+            <p className="para">{data.contentfulHomePage.paragraph2.paragraph2}</p>
+          </div>
+        </div>
       </div>
 
-      <NewsletterPrev />
-
-      <div className="home-instagram">
-
+      <div className="home-insta">
+        <h1 className="pageTitle">WHAT ARE THE BRHOTHERS UP TO?</h1>
       </div>
+
 
     </Layout>
   )

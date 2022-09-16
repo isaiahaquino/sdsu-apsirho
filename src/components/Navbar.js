@@ -9,10 +9,9 @@ function Navbar({ click, closeMobileMenu }) {
       <div className='navbar-container'>
         <Link to='/'>HOME</Link>
         <Link to='/about'>ABOUT</Link>
-        <Link to='/history'>HISTORY</Link>
         <Link to='/chapters'>CHAPTERS</Link>
         <Link to='/brhothers'>BRHOTHERS</Link>
-        <Link to='/newsletter'>NEWSLETTER</Link>
+        <Link to='/join'>JOIN APSIRHO</Link>
       </div>
 
       <ul className={click ? 'mobile-nav active' : 'mobile-nav'}>
@@ -27,11 +26,6 @@ function Navbar({ click, closeMobileMenu }) {
           </Link>
         </li>
         <li className='nav-item'>
-          <Link to='/history' className='nav-link' onClick={closeMobileMenu}>
-            HISTORY
-          </Link>
-        </li>
-        <li className='nav-item'>
           <Link to='/chapters' className='nav-link' onClick={closeMobileMenu}>
             CHAPTERS
           </Link>
@@ -42,8 +36,8 @@ function Navbar({ click, closeMobileMenu }) {
           </Link>
         </li>
         <li className='nav-item'>
-          <Link to='/newsletter' className='nav-link' onClick={closeMobileMenu}>
-            NEWSLETTER
+          <Link to='/join' className='nav-link' onClick={closeMobileMenu}>
+            JOIN APSIRHO
           </Link>
         </li>
       </ul>

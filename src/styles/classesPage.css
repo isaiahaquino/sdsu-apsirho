@@ -1,53 +1,26 @@
-.class-main, .class-sub {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.class-main>img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-}
-
-.class-main .pageTitle {
-  text-align: center;
-}
-
-.class-sub h3 {
-  max-width: 700px;
-}
-
-.class-main .pageSubtitle {
-  margin-bottom: .25rem;
-  font-size: 1.5rem;
-}
-
 .class-list {
   display: flex;
   flex-direction: column;
   gap: .25rem;
+  margin: 0 1rem 8rem 1rem;
 }
 
-.class-photos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 3rem;
+.classTitle {
+  border: none;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
 }
 
+.classSemester {
+  margin-bottom: 6rem;
+  max-width: 1000px;
+}
 
 @media only screen and (min-width: 700px) {
-  .class-photos {
-    flex-direction: row;
-  }
+ 
 }
 
 @media only screen and (min-width: 1200px) {
-  .class-main {
-    margin-top: 0;
-  }
+  
 }

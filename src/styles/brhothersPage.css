@@ -1,33 +1,23 @@
-.brhothers-main {
-  flex-direction: column;
-  align-items: center;
-}
-
-.brhothers-main .para {
-  text-align: center;
-}
-
 .brhothers-classes {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  margin-bottom: 8rem;
+}
+
+.brhothers-classes .para {
+  font-size: 1.25rem;
+  color: var(--color-blue);
 }
 
 .brhothers-classes>a {
   width: 285px;
 }
 
-.brhothers-main a, .brhothers-main a:link, .brhothers-main a:visited, .brhothers-main a:active {
-  color: var(--color-blue);
-}
-
-.brhothers-classes a h2 {
-  font-size: 1.5rem;
-}
-
 #founding-fathers{
   font-size: 2rem;
   margin: 4rem 0;
+  color: var(--color-blue);
 }
 
 @media only screen and (min-width: 700px) {
@@ -40,15 +30,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-
-  .brhothers-main {
-    margin-top: 0;
-  }
-
-  .brhothers-main .para {
-    width: 50vw;
-    max-width: 800px;
-  }
 
   .brhothers-classes {
     max-height: 500px;
