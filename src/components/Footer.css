@@ -5,17 +5,32 @@
 
 .footer-container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 2rem;
+}
+
+.footer-copy {
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
-  /* border-top: solid 1px lightgray; */
   padding: 1rem 0;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
-.footer-container p {
+.footer-container>div>p, .footer-container>div a, .footer-copy p {
   font-size: 1rem;
+  color: gray;
+}
+
+.footer-container>div a:hover {
+  color: white;
+}
+
+.footer-container h1 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
   color: white;
 }
 
@@ -31,14 +46,11 @@
 
 @media only screen and (min-width: 700px ) {
   .footer-container {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .footer-container p {
-    font-size: 1.25rem;
-  }
+
 }

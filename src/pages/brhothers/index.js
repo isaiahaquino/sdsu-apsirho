@@ -6,8 +6,6 @@ import { Seo } from '../../components/seo'
 
 function BrhothersPage({ data }) {
 
-  const nodes = data.allContentfulClasses.nodes;
-
   return (
     <Layout>
 
@@ -30,7 +28,7 @@ function BrhothersPage({ data }) {
 
       <div className='brhothers-classes'>
         {
-            nodes.map(node => (
+            data.allContentfulClasses.nodes.map(node => (
             <Link className='para' key={node.id} to={`/brhothers/${node.slug}`}>
               <h2>{node.class}</h2>
             </Link>
